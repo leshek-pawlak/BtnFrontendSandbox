@@ -1,6 +1,6 @@
-# BtnFrontendSandbox
+# BtnNextFrontendSandbox
 
-bitnoise frontend sandbox ReactJs, Webpack, ES6, PostCSS
+next Bitnoise frontend sandbox ReactJs, Webpack, ES6, PostCSS
 
 To install application just run in console:
 
