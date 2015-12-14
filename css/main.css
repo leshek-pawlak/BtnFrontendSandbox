@@ -1,3 +1,15 @@
-html {
-    color: blue;
-}
+/*
+    Plugins styles
+*/
+@import "css-reset/reset.css";
+@import "normalize.css";
+
+/*
+    Global styles
+*/
+@import "global.css";
+
+/*
+    Import components styles
+*/
+@import "components/header.css";

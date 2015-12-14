@@ -2,23 +2,21 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Route, IndexRoute } from 'react-router';
 import { Provider } from 'react-redux';
-import { DevTools, DebugPanel, LogMonitor } from 'redux-devtools/lib/react';
 
 import createBrowserHistory from 'history/lib/createBrowserHistory';
 
 import App from './App';
 
-import { Home } from './pages';
+import { Home, Brief201 } from './pages';
+
+const history = createBrowserHistory();
 
 ReactDOM.render(<div>
-    <Provider store={store}>
-        <Router history={createBrowserHistory()}>
-            <Route path="/" component={App}>
-                <IndexRoute component={Home} />
-            </Route>
-        </Router>
-    </Provider>
-    <DebugPanel top right bottom>
-        <DevTools store={store} monitor={LogMonitor} />
-    </DebugPanel>
+    <Router history={history}>
+        <Route path="/" component={App}>
+            <IndexRoute component={Home} />
+            <Route path="201" component={Brief201} />
+        </Route>
+    </Router>
+
 </div>, document.getElementById('root'));

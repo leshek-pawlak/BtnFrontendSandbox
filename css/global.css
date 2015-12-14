@@ -1,0 +1,25 @@
+html {
+
+}
+
+body {
+    font-family: 'Roboto';
+}
+
+h1 {
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+p, a, strong {
+    font-size: 16px;
+}
